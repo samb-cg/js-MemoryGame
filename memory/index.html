@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link href="memory.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="light-mode">
+
+    <header><h1>Test your memory</h1></header>
+
+    <div id="blocker">
+        <div id="instructions" class="shadow">
+            <p id="startText">
+                Select the numbers in the right order, starting with 0.
+            </p>
+            <p id="gameOverText">
+                <b>Game Over</b><br>
+                Score: <span id="score"></span>
+            </p>
+            <div>
+                <button type="button" class="btn btn-green" id="playBtn">
+                    Play
+                </button>
+                <button type="button" class="btn btn-orange" id="resetBtn">
+                    Reset
+                </button>           
+            </div>
+        </div>
+    </div>  
+
+    <div id="memory-container">
+        <svg id="mySvg" width="700px" height="700px"></svg>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>

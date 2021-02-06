@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-image: url("./headerimg.png");
+    margin: 0;
+    height: 10rem;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+#memory-container{
+    display: flex;
+    justify-content: center;
+}
+#mySvg{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+#blocker{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#instructions{
+    border: 1px solid rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+#gameOverText{
+    display: none;
+}
+#playBtn{
+    display: inline;
+}
+#resetBtn{
+    display: none;
+}
+.btn{
+    display: inline-block;
+    margin: auto;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+.btn-orange{
+    color: white;
+    background-color: #fd7e14;
+}
+.btn-orange:hover{
+    background-color: #ffca2c;
+}
+.btn-green{
+    color: white;
+    background-color: #198754;
+}
+.btn-green:hover{
+    background-color: #157347;
+}
+.rectangle{
+    stroke-width: 0.6rem;
+    stroke: black;
+    fill: rgb(137,222,255);
+    cursor: pointer;
+}
+.text{
+    fill: black;
+    font-size: 3.2rem;
+    user-select: none;
+    pointer-events: none;
+}
